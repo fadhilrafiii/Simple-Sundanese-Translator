@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+
+#headerpic{
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -20px;
+}
+.jumbotron {
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    margin: -8px;
+    top: 0px;
+    position: relative;
+ }
+
+.judul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+.part{
+    flex-basis: 36%;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+
+    margin: 15px;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+.mid{
+    flex-basis: 20%;
+    position: relative;
+    padding: 0px;
+    align-items: center;
+}
+.box{
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    padding: 0px;
+    
+}
+
+.kiri{
+    font-size: 1em;
+    border: 2px solid rgb(180, 146, 101);
+    border-radius: 8px;
+}
+
+.kanan{
+    font-size: 1em;
+    border: 2px solid rgb(180, 146, 101);
+    border-radius: 8px;
+}
+.pilihbahasa{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pilihbahasa select{
+    background: #ffffff;
+    color:  rgb(95, 72, 44);
+    padding: 0px 5px;
+    width: 200px;
+    height: 32px;
+    border: 2px solid rgb(180, 146, 101);
+    border-radius: 6px;
+    font-size: 11px;
+    -webkit-appearance: button;   
+    outline: none;
+    line-height: 32px;
+    margin: 26px 0;
+    font-family: 'Quicksand', sans-serif ;
+    font-weight: 500;
+}
+
+.pilihbahasa:before{
+    content: '\f0d7';
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 27px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    background:rgb(180, 146, 101);
+    border-radius: 0 8px 8px 0px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.pilihbahasa:hover:before{
+    background-color: rgb(95, 72, 45);
+    top: 27px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+}
+.ten{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ten select{
+    background: #ffffff;
+    color:  rgb(95, 72, 44);
+    padding: 0px 5px;
+    width: 200px;
+    height: 32px;
+    border: 2px solid rgb(180, 146, 101);
+    border-radius: 6px;
+    font-size: 11px;
+    -webkit-appearance: button;   
+    outline: none;
+    line-height: 32px;
+    margin: 26px 0;
+    font-family: 'Quicksand', sans-serif ;
+    font-weight: 500;
+}
+
+.ten:before{
+    content: '\f0d7';
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 26px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    background:rgb(180, 146, 101);
+    border-radius: 0 8px 8px 0px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.ten:hover:before{
+    background-color: rgb(95, 72, 45);
+    top: 26px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+}
+.dari{
+    color: rgb(95, 72, 45);
+}
+
+.ke{
+    color: rgb(95, 72, 45);
+}
+.bahasa{
+    color: rgb(95, 72, 45);
+}
+
+
+
+.butt:hover{
+    background-color:  rgb(95, 72, 45);
+    cursor: pointer;
+}
+
+
+
+
+.butt{
+    background: rgb(180, 146, 101);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 36px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+
+    transform: translate(0%, 650%);
+}
+
+
+#footerpic{
+    max-height: 100px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -20px;
+}
+.footer {
+    font-size: 20px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    margin: -8px;
+    top: 0px;
+    position: relative;
+    font-weight: 600;
+ }
+ .closing{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+.inputbahasa{
+    margin-top: 20px;
+    width: 450px;
+    height: 150px;
+    padding-left:0;
+    padding-top:0;
+    padding-bottom:0.4em;
+    padding-right: 0.4em;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    font-family: 'Quicksand', sans-serif ;
+    cursor: text         ;    
+}
+#bahasa-asal{
+    margin: 20px;
+    font-weight: 500;
+    color: rgb(95, 72, 45);
+}
+#bahasa-tujuan{
+    margin: 20px;
+    font-weight: 500;
+    color: rgb(95, 72, 45);
+}
+#kebahasa{
+    margin: 20px;
+    text-align: left;
+}

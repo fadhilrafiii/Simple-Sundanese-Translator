@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Sundanese Translator</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static',filename='font-awesome-4.7.0/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='styles/translator.css') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <form id="formbahasa">
+        <header class="header">
+            <div class="jumbotron">
+                <div class="judul"><h1>Simple Sundanese Translator</h1>
+                <h4>Mari Kita Belajar Bahasa Sunda!</h4></div>
+                <img id="headerpic" src="{{ url_for('static',filename='Gambar/header.png') }}">
+            </div>
+        </header>
+        <div class="row">
+            <div class="part left">
+                <h4 class="dari">Terjemahkan dari: </h4>
+                <div id="bahasa-asal">Bahasa Sunda</div>
+                <div class="box kiri"><textarea class="inputbahasa" type="text" id="daribahasa" name="daribahasa" placeholder="Masukan kata atau kalimat"></textarea></div>
+            </div>
+            <div class="part mid">
+                <div class="pilihbahasa">
+                    <div class="selected">
+                        <select onclick="changeLanguage();" name="selectedlanguage" id="selectedlanguage">
+                            <option class="opsi">Pilih Bahasa</option>
+                            <option name="selectedlanguage" value="si">Sunda-Indonesia</option>
+                            <option name="selectedlanguage" value="is">Indonesia-Sunda</option>
+                        </select>
+                   </div>
+                </div>
+                <div class="box ten">
+                    <div class="select">
+                        <select name="algoritma" id="selected">
+                            <option selected disabled class="opsi">Pilih Algoritma</option>
+                            <option name="algoritma" value="bm">Boyer-Moore</option>
+                            <option name="algoritma" value="kmp">Knuth-Morris-Pratt</option>
+                            <option name="algoritma" value="regex">Regex</option>
+                        </select>
+                   </div>
+                </div>
+                <div class="translate">
+                    <div class="btn2">
+                        <button class="butt dua" type="button" onclick="postData();">Translate!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="part right">
+                <h4 class="ke">Terjemahkan ke: </h4>
+                <div id="bahasa-tujuan">Bahasa Indonesia</div>
+                <div class="box kanan">
+                    <div class="hasil">
+                        <p id="kebahasa"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="closing"><p>Fadhil Muhammad Rafi' &#169; 2019, Ca-Aslab IRK</p></div>
+            <img id="footerpic" src="{{ url_for('static',filename='Gambar/header.png') }}">
+        </footer>
+        </form>
+        <script src="{{ url_for('static',filename='translator.js')}}"></script>
+  </body>
+</html>
