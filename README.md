@@ -65,11 +65,18 @@ Sunda : abdi henteu tiasa bahasa Sunda
 - Visual Studio Code
 - Mozilla Firefox
 
-### Authors
-- Fadhil Muhammad Rafi'
+### How to Run
+1. Buka terminal
+2. Pergi ke direktori file
+3. tulis command berikut pada terminal:  set FLASK_APP=translator.py
+4. selanjutnya tulis: python -m flask run
+5. Buka localhost:5000 pada web browser
 
 ### Demo Penggunaan
 bit.ly/SundaneseTranslatorFadhil
+
+### Authors
+- Fadhil Muhammad Rafi'
 
 ### Acknowledgement
 - Muhammad Hendry Prasetya
