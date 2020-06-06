@@ -55,8 +55,21 @@ Indonesia : saya tidak bisa bahasa Sunda
 Sunda : abdi henteu tiasa bahasa Sunda
 ```
 
-## Pengumpulan
-1. Lakukan merge request dari hasil fork kalian ke repository ini
-2. Untuk demonya, silahkan membuat video demo penggunaan programnya, diupload ke YouTube dan sertakan linknya pada Readme.
+## Prerequisites
+1. Python 3.6/3.7/3.8 Download https://www.python.org/downloads/
+2. Flask bisa diunduh melalui terminal dengan command pip install flask
+3. Web Browser
+4. Internet (karena menggunakan jquery yang diambil dari googleapis.com)
 
-### **_(Ubah file README ini pada repository hasil fork kalian)_**
+### Built With
+- Visual Studio Code
+- Mozilla Firefox
+
+### Authors
+- Fadhil Muhammad Rafi'
+
+### Demo Penggunaan
+bit.ly/SundaneseTranslatorFadhil
+
+### Acknowledgement
+- Muhammad Hendry Prasetya
